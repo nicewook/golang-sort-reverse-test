@@ -6,12 +6,10 @@ import (
 
 func sortReverse1(a []int) {
 	sort.Sort(sort.Reverse(sort.IntSlice(a)))
-	// return a
 }
 
 func sortReverse2(a []int) {
 	sort.Slice(a, func(i, j int) bool {
 		return a[i] > a[j]
 	})
-	// return a
 }
